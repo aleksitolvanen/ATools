@@ -9,6 +9,8 @@ namespace ATools
     {
         public string DateTimeFormat = "dd.MM.yyyy HH:mm:ss";
 
+        public int BlockingCollectionItemCount { get { return bc.Count; } }
+
         private BlockingCollection<LogItem> bc = new BlockingCollection<LogItem>();
 
         private string FilePath { get; set; }
